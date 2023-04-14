@@ -8,9 +8,9 @@ driver = webdriver.Firefox()
 driver.get('https://icp.administracionelectronica.gob.es/icpplus/index.html')
 
 
-datos = [{"passaporte": "AW985926", "nombre": "Juan david hernandez ayala",
+datos = [{"passaporte": "AG985922", "nombre": "pedro marquez",
           "nacimiento": 1995, "Pais": "Colombia"},
-         {"passaporte": "AW985926", "nombre": "Maria Isabel Patiño Villarruel",
+         {"passaporte": "AT985928", "nombre": "daniela gonzalez",
          "nacimiento": 1996, "Pais": "Colombia"}
 
          ]
