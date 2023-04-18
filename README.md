@@ -122,11 +122,11 @@ if you do not want to configure select "//*[@id='sede']" = all offices in your p
 in line  51 configure the procedure
 "//*[@id='tramiteGrupo[0]']/option[2]").click()  # in my case select asylum application
 
-NOTE: the numbers of the options may vary depending on the province, it is recommended to inspect the page and request the xpaht of the option, or it can be obtained through simple reasoning, the first option is always 0
+#NOTE: the numbers of the options may vary depending on the province, it is recommended to inspect the page and request the xpaht of the option, or it can be obtained #through simple reasoning, the first option is always 0
 
 "//*[@id='sede']"  = All office
 
-Procedure in office of extranger
+#Procedure in office of extranger
 "//*[@id='tramiteGrupo[0]']/option[2]" = ACCESO A 1ª AUT. DE RESIDENCIA DE LARGA DURACIÓN Y LARGA DURACIÓN UE
 
 "//*[@id='tramiteGrupo[0]']/option[3]" = AUT. DE RESIDENCIA TEMPORAL POR CIRCUNS. EXCEPCIONALES POR ARRAIGO
@@ -150,8 +150,8 @@ Procedure in office of extranger
 "//*[@id='tramiteGrupo[0]']/option[12]" = TRABAJO Y RESIDENCIA INICIAL POR CUENTA AJENA
 
 
-NOTE: in some provinces the procedure group changes, so it is advisable to investigate the page to find out if the procedure is in group 0 or group 1
-procedure of department of police
+#NOTE: in some provinces the procedure group changes, so it is advisable to investigate the page to find out if the procedure is in group 0 or group 1
+#procedure of department of police
 
 
 "//*[@id='tramiteGrupo[1]']/option[2]" = POLICIA - RECOGIDA DE TARJETA DE IDENTIDAD DE EXTRANJERO (TIE)
