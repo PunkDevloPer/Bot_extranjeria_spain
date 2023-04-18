@@ -5,12 +5,12 @@ To use it, you just have to download it and edit the dictionary with the followi
 data = [{"passaport": "here", "Name": "here", "birthdate": here, "Country": "here"},
         {"passaport": "here", "Name": "here", "birthdate": here, "Country": "here"}
          ]
-  and edit the paramether of repetition alone if it is necesary in line 46 for default is 6
+  and edit the paramether of repetition alone if it is necesary in line 56 for default is 6
   
 if your procedure and province  is  different edit the lines
-26 and 27 of province 
-selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
-                                                                modify Option[int] 
+modify de function in line  28 this is the province
+driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
+                                            -->modify Option[int] 
 # Provinces
 "//*[@id='form']/option[2]" = A Coruña
 "//*[@id='form']/option[3]" = Albacete
