@@ -3,14 +3,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
+import requests
 
 driver = webdriver.Firefox()
 driver.get('https://icp.administracionelectronica.gob.es/icpplus/index.html')
 
-
-datos = [{"passaporte": "AG985922", "nombre": "pedro marquez",
+datos = [{"passaporte": "AW985926", "nombre": "Juan david hernandez ayala",
           "nacimiento": 1995, "Pais": "Colombia"},
-         {"passaporte": "AT985928", "nombre": "daniela gonzalez",
+         {"passaporte": "AW985929q ", "nombre": "Maria Isabel Patiño Villarruel",
          "nacimiento": 1996, "Pais": "Colombia"}
 
          ]
@@ -23,8 +23,7 @@ try:
     )
     cookies.click()
 except:
-    print("no hay cookies que aceptar")
-
+    pass
 selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]")
 selection.send_keys("Castellón")
 
