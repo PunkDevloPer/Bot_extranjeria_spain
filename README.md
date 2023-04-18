@@ -151,6 +151,7 @@ Procedure in office of extranger
 
 NOTE: in some provinces the procedure group changes, so it is advisable to investigate the page to find out if the procedure is in group 0 or group 1
 procedure of department of police
+
 "//*[@id='tramiteGrupo[1]']/option[2]" = POLICIA - RECOGIDA DE TARJETA DE IDENTIDAD DE EXTRANJERO (TIE)
 
 "//*[@id='tramiteGrupo[1]']/option[3]" = POLICIA- EXPEDICIÓN/RENOVACIÓN DE DOCUMENTOS DE SOLICITANTES DE ASILO
