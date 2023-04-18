@@ -12,13 +12,21 @@ modify de function in line  28 this is the province
 driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
                                             -->modify Option[int] 
 # Provinces
-"//*[@id='form']/option[2]" = A Coruña          "//*[@id='form']/option[3]" = Albacete
+"//*[@id='form']/option[2]" = A Coruña 
 
-"//*[@id='form']/option[4]" = Alicante          "//*[@id='form']/option[5]" = Almeria  
+"//*[@id='form']/option[3]" = Albacete
 
-"//*[@id='form']/option[5]" = Almeria           "//*[@id='form']/option[6]" = Araba
+"//*[@id='form']/option[4]" = Alicante    
 
-"//*[@id='form']/option[7]" = asturias          "//*[@id='form']/option[8]" = avila
+ "//*[@id='form']/option[5]" = Almeria 
+ 
+"//*[@id='form']/option[5]" = Almeria   
+
+ "//*[@id='form']/option[6]" = Araba
+
+"//*[@id='form']/option[7]" = asturias 
+
+"//*[@id='form']/option[8]" = avila
 
 "//*[@id='form']/option[9]" =  badajoz          "//*[@id='form']/option[10]" = Barcelona
 
