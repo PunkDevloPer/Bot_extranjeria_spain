@@ -12,6 +12,7 @@ modify de function in line  28 this is the province
 driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
                                             -->modify Option[int] 
 # Provinces
+
 "//*[@id='form']/option[2]" = A Coruña
 
 "//*[@id='form']/option[3]" = Albacete
@@ -127,6 +128,7 @@ in line  51 configure the procedure
 "//*[@id='sede']"  = All office
 
 #Procedure in office of extranger
+
 "//*[@id='tramiteGrupo[0]']/option[2]" = ACCESO A 1ª AUT. DE RESIDENCIA DE LARGA DURACIÓN Y LARGA DURACIÓN UE
 
 "//*[@id='tramiteGrupo[0]']/option[3]" = AUT. DE RESIDENCIA TEMPORAL POR CIRCUNS. EXCEPCIONALES POR ARRAIGO
