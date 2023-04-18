@@ -9,9 +9,8 @@ data = [{"passaport": "here", "Name": "here", "birthdate": here, "Country": "her
   
 if your procedure and province  is  different edit the lines
 26 and 27 of province 
-selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]") 
-selection.send_keys("Castellón")
-
+selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
+                                                                modify Option[int] 
 # Provinces
 "//*[@id='form']/option[2]" = A Coruña
 "//*[@id='form']/option[3]" = Albacete
