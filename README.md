@@ -12,67 +12,109 @@ modify de function in line  28 this is the province
 driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
                                             -->modify Option[int] 
 # Provinces
-"//*[@id='form']/option[2]" = A Coruña 
+"//*[@id='form']/option[2]" = A Coruña
 
 "//*[@id='form']/option[3]" = Albacete
 
-"//*[@id='form']/option[4]" = Alicante    
+"//*[@id='form']/option[4]" = Alicante
 
- "//*[@id='form']/option[5]" = Almeria 
- 
-"//*[@id='form']/option[5]" = Almeria   
+"//*[@id='form']/option[5]" = Almeria
 
- "//*[@id='form']/option[6]" = Araba
+"//*[@id='form']/option[6]" = Araba
 
-"//*[@id='form']/option[7]" = asturias 
+"//*[@id='form']/option[7]" = asturias
 
 "//*[@id='form']/option[8]" = avila
 
-"//*[@id='form']/option[9]" =  badajoz          "//*[@id='form']/option[10]" = Barcelona
+"//*[@id='form']/option[9]" =  badajoz
 
-"//*[@id='form']/option[11]" = Bizkaia          "//*[@id='form']/option[12]" = Burgos
+"//*[@id='form']/option[10]" = Barcelona
 
-"//*[@id='form']/option[13]" = Caseres          "//*[@id='form']/option[14]" = Cadiz
+"//*[@id='form']/option[11]" = Bizkaia
 
-"//*[@id='form']/option[15]" = Cantabria        "//*[@id='form']/option[16]" = Castellón
+"//*[@id='form']/option[12]" = Burgos
 
-"//*[@id='form']/option[17]" = Ceuta            "//*[@id='form']/option[18]" = Ciudad Real
+"//*[@id='form']/option[13]" = Caseres
 
-"//*[@id='form']/option[19]" = Cordoba          "//*[@id='form']/option[20]"=  Cuenca
+"//*[@id='form']/option[14]" = Cadiz
 
-"//*[@id='form']/option[21]"=  Gipuzkoa         "//*[@id='form']/option[22]"= Girona
+"//*[@id='form']/option[15]" = Cantabria
 
-"//*[@id='form']/option[23]"= Granada           "//*[@id='form']/option[24]"= Guadalaraja
+"//*[@id='form']/option[16]" = Castellón
 
-"//*[@id='form']/option[25]"= Huelva            "//*[@id='form']/option[26]" = huesca
+"//*[@id='form']/option[17]" = Ceuta
 
-"//*[@id='form']/option[27]" = Illes Balears    "//*[@id='form']/option[28]" = Jaén
+"//*[@id='form']/option[18]" = Ciudad Real
 
-"//*[@id='form']/option[29]" = La Rioja         "//*[@id='form']/option[30]" = Las Palmas
+"//*[@id='form']/option[19]" = Cordoba
 
-"//*[@id='form']/option[31]" = León             "//*[@id='form']/option[32]" = Lleida
+"//*[@id='form']/option[20]"=  Cuenca
 
-"//*[@id='form']/option[33]" = Lugo             "//*[@id="form"]/option[34]" = Madrid
+"//*[@id='form']/option[21]"=  Gipuzkoa
 
-"//*[@id='form']/option[35]" = Málaga           "//*[@id='form']/option[36]" = Melilla
+"//*[@id='form']/option[22]"= Girona
 
-"//*[@id='form']/option[37]" = Murcia           "//*[@id='form']/option[38]" = Navarra
+"//*[@id='form']/option[23]"= Granada
 
-"//*[@id='form']/option[39]" = Ourense          "//*[@id='form']/option[40]" = Palencia
+"//*[@id='form']/option[24]"= Guadalaraja
 
-"//*[@id='form']/option[41]" = Pontevedra       "//*[@id='form']/option[42]" = Salamanca
+"//*[@id='form']/option[25]"= Huelva
 
-"//*[@id='form']/option[43]" = S.Cruz Tenerife  "//*[@id='form']/option[44]" = Segovia
+"//*[@id='form']/option[26]" = huesca
 
-"//*[@id='form']/option[45]" = Sevilla          "//*[@id='form']/option[46]" = Soria
+"//*[@id='form']/option[27]" = Illes Balears
 
-"//*[@id='form']/option[47]" = Tarragona        "//*[@id='form']/option[48]" = Teruel
+"//*[@id='form']/option[28]" = Jaén
 
-"//*[@id='form']/option[47]" = Toled            "//*[@id='form']/option[49]" = Valencia
+"//*[@id='form']/option[29]" = La Rioja
 
-"//*[@id='form']/option[50]" = Vallaolid        "//*[@id='form']/option[51]" = Zamor
+"//*[@id='form']/option[30]" = Las Palmas
 
-"//*[@id='form']/option[52]" = Zaragoza
+"//*[@id='form']/option[31]" = León
+
+"//*[@id='form']/option[32]" = Lleida
+
+"//*[@id='form']/option[33]" = Lugo
+
+"//*[@id="form"]/option[34]" = Madrid
+
+"//*[@id='form']/option[35]" = Málaga
+
+"//*[@id='form']/option[36]" = Melilla
+
+"//*[@id='form']/option[37]" = Murcia
+
+"//*[@id='form']/option[38]" = Navarra
+
+"//*[@id='form']/option[39]" = Ourense
+
+"//*[@id='form']/option[40]" = Palencia
+
+"//*[@id='form']/option[41]" = Pontevedra
+
+"//*[@id='form']/option[42]" = Salamanca
+
+"//*[@id='form']/option[43]" = S.Cruz Tenerife
+
+"//*[@id='form']/option[44]" = Segovia
+
+"//*[@id='form']/option[45]" = Sevilla
+
+"//*[@id='form']/option[46]" = Soria
+
+"//*[@id='form']/option[47]" = Tarragona
+
+"//*[@id='form']/option[48]" = Teruel
+
+"//*[@id='form']/option[49]" = Toled
+
+"//*[@id='form']/option[50]" = Valencia
+
+"//*[@id='form']/option[51]" = Vallaolid
+
+"//*[@id='form']/option[52]" = Zamora
+
+"//*[@id='form']/option[53]" = Zaragoza
 
 in lines 42 to 50 configure the office of police  
 if you do not want to configure select "//*[@id='sede']" = all offices in your province
