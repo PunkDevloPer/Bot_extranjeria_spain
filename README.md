@@ -149,8 +149,10 @@ Procedure in office of extranger
 
 "//*[@id='tramiteGrupo[0]']/option[12]" = TRABAJO Y RESIDENCIA INICIAL POR CUENTA AJENA
 
+
 NOTE: in some provinces the procedure group changes, so it is advisable to investigate the page to find out if the procedure is in group 0 or group 1
 procedure of department of police
+
 
 "//*[@id='tramiteGrupo[1]']/option[2]" = POLICIA - RECOGIDA DE TARJETA DE IDENTIDAD DE EXTRANJERO (TIE)
 
