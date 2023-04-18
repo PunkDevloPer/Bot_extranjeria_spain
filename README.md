@@ -59,12 +59,12 @@ selection.send_keys("Castellón")
 "//*[@id='form']/option[45]" = Sevilla
 "//*[@id='form']/option[46]" = Soria
 "//*[@id='form']/option[47]" = Tarragona
-"//*[@id='form']/option[47]" = Teruel
+"//*[@id='form']/option[48]" = Teruel
 "//*[@id='form']/option[47]" = Toled
-"//*[@id='form']/option[47]" = Valenia
-"//*[@id='form']/option[47]" = Vallaolid
-"//*[@id='form']/option[47]" = Zamor
-"//*[@id='form']/option[47]" = Zaragoza
+"//*[@id='form']/option[49]" = Valenia
+"//*[@id='form']/option[50]" = Vallaolid
+"//*[@id='form']/option[51]" = Zamor
+"//*[@id='form']/option[52]" = Zaragoza
 
 and lines 
 33 to 38 of procedure
