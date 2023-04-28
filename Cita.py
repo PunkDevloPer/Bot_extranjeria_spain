@@ -1,20 +1,18 @@
-from selenium.webdriver.support.ui import Select
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
-import requests
 
 driver = webdriver.Firefox()
 driver.get('https://icp.administracionelectronica.gob.es/icpplus/index.html')
 
-datos = [{"passaporte": "passport", "nombre": "Name",
-          "nacimiento": year, "Pais": "Country"},
-         {"passaporte": "Passport ", "nombre": "Name",
-         "nacimiento": year, "Pais": "Country"}
+datos = [{"passaporte": "AW985926", "nombre": "Juan david hernandez ayala",
+          "nacimiento": 1995, "Pais": "Colombia"},
+         {"passaporte": "AW985929 ", "nombre": "Maria Isabel Patiño Villarruel",
+         "nacimiento": 1996, "Pais": "Colombia"}
 
          ]
-
 
 """navegar por la pagina"""
 try:
@@ -24,25 +22,47 @@ try:
     cookies.click()
 except:
     pass
-selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]")
-selection.send_keys("Castellón")
 
+
+def province():
+    driver.find_element(By.XPATH, "//*[@id='form']/option[16]").click()
+
+
+province()
 driver.implicitly_wait(15)
 
-acept = driver.find_element(By.XPATH, "//*[@id='btnAceptar']").click()
 
-drop = Select(driver.find_element(By.XPATH, "//*[@id='sede']"))
-drop.select_by_visible_text("CNP COMISARIA ASILO, RIO SELLA, 5")
+def aceptbutton():
+    driver.find_element(By.XPATH, "//*[@id='btnAceptar']").click()
 
-droptramit = Select(driver.find_element(
-    By.XPATH, "//*[@id='tramiteGrupo[0]']"))
-droptramit.select_by_visible_text("POLICIA- SOLICITUD ASILO")
 
+aceptbutton()
+
+
+def office():
+    # select department of police
+    driver.find_element(By.XPATH, "//*[@id='sede']/optgroup/option[2]").click()
+
+
+office()
+
+
+def procedure():
+    # procedure of department of police
+    driver.find_element(
+        By.XPATH, "//*[@id='tramiteGrupo[0]']/option[2]").click()  # ->solicitud de asilo
+
+
+procedure()
 driver.implicitly_wait(30)
+aceptbutton()
 
-acept = driver.find_element(By.XPATH, "//*[@id='btnAceptar']").click()
-enter = driver.find_element(By.XPATH, "//*[@id='btnEntrar']").click()
 
+def enter():
+    driver.find_element(By.XPATH, "//*[@id='btnEntrar']").click()
+
+
+enter()
 # definir el número de veces que se enviarán los datos
 repeat = 6
 
@@ -67,23 +87,17 @@ for dato in datos:
         # enviar el formulario
         driver.find_element(By.XPATH, "//*[@id='btnSubmit']").click()
         # se repite 6 veces
-        selection = driver.find_element(By.XPATH, "//*[@id='form']/option[16]")
-        selection.send_keys("Castellón")
-
+        province()
         driver.implicitly_wait(15)
-
-        acept = driver.find_element(By.XPATH, "//*[@id='btnAceptar']").click()
-
-        drop = Select(driver.find_element(By.XPATH, "//*[@id='sede']"))
-        drop.select_by_visible_text("CNP COMISARIA ASILO, RIO SELLA, 5")
-
-        droptramit = Select(driver.find_element(
-            By.XPATH, "//*[@id='tramiteGrupo[0]']"))
-        droptramit.select_by_visible_text("POLICIA- SOLICITUD ASILO")
+        aceptbutton()
+        driver.find_element(
+            By.XPATH, "//*[@id='sede']/optgroup/option[2]").click()
+        driver.find_element(
+            By.XPATH, "//*[@id='tramiteGrupo[0]']/option[2]").click()
 
         driver.implicitly_wait(30)
 
-        acept = driver.find_element(By.XPATH, "//*[@id='btnAceptar']").click()
-        enter = driver.find_element(By.XPATH, "//*[@id='btnEntrar']").click()
+        aceptbutton()
+        enter()
 if repeat == 6:
     driver.quit()
